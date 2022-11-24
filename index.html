@@ -6,30 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Expanding Card</title>
+    <script src="https://kit.fontawesome.com/39a7eb68d5.js" crossorigin="anonymous"></script>
+    <title> Text-using-Coma </title>
 </head>
 <body>
-    <h1 class="title">Expanding Card</h1>
-
+   
     <div class="container">
+        <h3>Enter all of the choices divided by a comma ( , )
+        <br> Press enter when you're done </h3>
+        <textarea placeholder="Enter Choices here..." id="textarea" ></textarea>
 
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
-            <h3>Explore The World</h3>
+        <div id="tags">
+            
         </div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
-            <h3>Wild Forest</h3>
-        </div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80')">
-            <h3>Sunny Beach</h3>
-        </div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80')">
-            <h3>City on Winter</h3>
-        </div>
-        <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')">
-            <h3>Mountains - Clouds</h3>
-        </div>
-
     </div>
+
+    <div class="campo wrapp-input">
+        <div class="separador__formulario">
+            <label for="skills_input" class="formulario__label">Habilidades (separadas por coma)</label>
+            <input
+                type="text"
+                class="formulario__input"
+                id="skills_input"
+                placeholder="Node.js, PHP, CSS, Laravel, UX / UI"
+            >
+
+            <div id="skills" class="formulario__listado"></div>
+            <input type="hidden" name="skills" value="{{usuario.skills}}"> 
+
+        </div>
+    </div>
+
+
     
     <script src="script.js"></script>
 </body>
